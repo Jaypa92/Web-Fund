@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="./buttonClicker.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-title">
+            <div class="title">Dojonary</div>
+            <input type="text" name="search" placeholder="Search">
+            <div></div>
+            <button class="likes" onclick ='changeText(this)'>Login</button>
+        </div>
+        <div class="main">
+            <div class="left">
+                <div class="box">
+                    <div class="part-one">
+                        <div class="ninja">ninja</div>
+                        <div class="text-2">noun</div>
+                        <div class="text-3">Plural:<em>ninjas</em></div>
+                        <button class="likes"onclick="alert('Ninja was liked')">13 Likes</button>
+                    </div>
+                    <div class="part-two">
+                        <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjitsu</a></p>
+                    </div>                    
+                </div>
+                <div class="box">
+                    <div class="part-one">
+                        <div class="ninja">ninja</div>
+                        <div class="text-2">noun</div>
+                        <div class="text-3">Plural:<em>ninjas</em></div>
+                        <button class="likes"onclick="alert('Ninja was liked')">37 Likes</button>
+                    </div>
+                     <div class="part-two">
+                        <p>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                    </div>                    
+                </div>
+            </div>
+            <div class="right">
+                <div class="box-2">
+                    <div class="who">Dojonary is defined by <b>YOU</b></div>
+                        <button class="btn" onclick='remove(this)'>Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
