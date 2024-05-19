@@ -1,0 +1,37 @@
+/*IMPORTANT NOTE: Using 'auto' and 'fr' is common practice for responsive wen design while fixed units, not so 
+much.*/
+
+.grid{
+    /*"display: inline-grid" is another option that allows elements to only take up the space needed for their 
+    content*/
+    display: grid;
+    background-color: blue;
+    grid-template-columns: auto auto auto; /*"grid-template-columns" sets the amount and size of each column.Since
+    "auto" is written 3 times, it specifies 3 columns where the size is set to auto. Same thing applies for 
+    "grid-template-rows"*/
+    padding: 10px;
+    /*"column-gap" determines the distance between the veritcal columns whereas "row-gap" determines the gap between
+    horizontal rows */
+    gap: 10px; /*"gap" can be used for both "row-gap" and "column-gap". Two values can be used as well where
+    rows is the first value and columns being the next*/
+    grid-auto-flow: column; /*this orders the elements by column while "grid-auto-flow: rows" orders the elements
+    by rows*/
+}
+
+.grid > * {
+    background-color: aqua;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.item-1{
+    /*columns and rows have lines which is just a side of a column or row. If these being the first column would be
+    considered column lines 1 and 2: | | . grid-column-start tells the element which column-line to start on while
+    grid-column-end tells the element which line to end on.*/
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
